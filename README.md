@@ -1,55 +1,115 @@
-# Aims to Fulfill Your Dream — Travel Agency Website
+# Aims to Fulfill Your Dream
 
-## Project theme
-A contemporary, accessible, multi-page travel agency website showcasing destinations and tour packages in Nepal.
+## COM109 Client-Side Development – Coursework 2
 
-## Pages
-- `index.html` — Home page
-- `destinations.html` — Filterable destination cards
-- `packages.html` — Interactive package details
-- `about.html` — Agency story and jQuery accordion
-- `contact.html` — Phone, location, Facebook and Instagram contact options
-- `booking.html` — Accessible booking form with validation and localStorage
+**Aims to Fulfill Your Dream** is a group travel agency website developed for our COM109 Client-Side Development Coursework 2.
 
-## Technical features
-- Semantic HTML5
-- External CSS
-- CSS Grid and Flexbox
-- Responsive mobile navigation
-- CSS transitions and reveal animations
-- JavaScript event handling
-- jQuery accordion and scroll interaction
+The website focuses on travel and tourism in Nepal. It allows users to explore destinations, view travel packages, learn about the agency, access contact information and submit a booking request.
+
+## Group Members
+
+- **Purna Sapkota – Student ID: 20191520**
+- **Deepa Parajuli – Student ID: 20197019**
+- **Namrata Bhattarai – Student ID: 20197022**
+
+## Individual Contributions
+
+### Purna Sapkota
+- Booking page development
+- Booking form functionality
+- JavaScript form validation
+- localStorage functionality
+- Testing and improving booking interactions
+
+### Deepa Parajuli
+- Destinations page content
+- Travel destination images
+- Packages page content and presentation
+- Contact page development
+- Testing destination and package content
+
+### Namrata Bhattarai
+- Home page development and content
+- About page development
+- Navigation improvements
+- Responsive design
+- Accessibility and usability improvements
+
+## Website Pages
+
+The website contains the following pages:
+
+- Home
+- Destinations
+- Packages
+- About
+- Contact
+- Booking
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- jQuery
+- Web Storage / localStorage
+- Git and GitHub
+- GitHub Pages
+
+## Main Features
+
+- Responsive navigation
+- Destination cards and filtering
+- Travel package information
+- Expandable package details
+- Booking form
 - Client-side form validation
-- localStorage for booking requests
-- Accessible labels, error messages, skip link and keyboard-friendly controls
-- Organised folder structure
+- Booking data stored using localStorage
+- Responsive layout for different screen sizes
+- Accessible navigation and image alternative text
+- Contact and social media options
 
-## How to run
-Open `index.html` in a modern web browser.
+## Project Structure
 
-The project references jQuery from the official CDN, so an internet connection is required for the jQuery-enhanced accordion and scroll event binding. Core website features also include a vanilla JavaScript fallback.
+A clear folder structure is used to organise the project:
 
-## Suggested group roles
-Replace these placeholders with actual names:
-- Member 1: Home page and navigation
-- Member 2: Destinations and packages
-- Member 3: Booking form, validation and localStorage
-- Member 4: Accessibility testing, content and documentation
+- `index.html` – Home page
+- `destinations.html` – Destinations page
+- `packages.html` – Travel packages
+- `about.html` – About page
+- `contact.html` – Contact page
+- `booking.html` – Booking page
+- `css/style.css` – Website styling
+- `js/script.js` – JavaScript functionality
+- `images/` – Website images
 
-## Testing checklist
-- Test all navigation links
-- Test layout on desktop, tablet and mobile
-- Submit empty and invalid booking fields
-- Submit a valid booking and confirm it appears under Saved requests
-- Refresh the page and confirm saved data remains
-- Use keyboard Tab navigation
-- Check images have alternative text
-- Validate HTML and CSS before submission
+## Live Website
 
-## Academic note
-Update all text, prices, roles and contact information to match your group's own project. Acknowledge AI assistance and any external libraries in accordance with your university policy.
+The project is deployed using GitHub Pages:
 
-## Current contact details
-- Phone: 07918 877744
-- Location: FY1 1LR, Blackpool North
-- Facebook and Instagram buttons currently open the main platforms. Replace their links with the agency's exact profile URLs before final submission.
+https://s-purna.github.io/Aims-to-Fulfill-your-Dreams_CW2-Assesment/
+
+## GitHub Repository
+
+The complete source code and development history are available here:
+
+https://github.com/s-purna/Aims-to-Fulfill-your-Dreams_CW2-Assesment
+
+## Testing
+
+The website was tested for:
+
+- Navigation between all pages
+- Image loading
+- Responsive layouts
+- Destination filtering
+- Package interactions
+- Booking form validation
+- localStorage functionality
+- Keyboard navigation
+- Contact links
+- Mobile navigation
+
+## Academic Project
+
+This website was developed as a group project for **COM109 Client-Side Development Coursework 2**.
