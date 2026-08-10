@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Submit an accessible Nepal travel booking request with client-side validation.">
+  <title>Booking | Aims to Fulfill Your Dream</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="Aims to Fulfill Your Dream home">
+      <span class="brand-text">Aims to Fulfill Your Dream<small>Travel Agency</small></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav aria-label="Main navigation">
+      <ul class="nav-list" id="main-nav">
+        <li><a class="" href="index.html">Home</a></li>
+        <li><a class="" href="destinations.html">Destinations</a></li>
+        <li><a class="" href="packages.html">Packages</a></li>
+        <li><a class="" href="about.html">About</a></li>
+        <li><a class="" href="contact.html">Contact</a></li>
+        <li><a class="book-link active" href="booking.html">Book Now</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+<section class="page-hero"><div class="container"><span class="eyebrow">Start planning</span><h1>Booking Request</h1><p>Complete the form below. Required fields are marked with an asterisk.</p></div></section>
+<section class="section"><div class="container two-col">
+  <div class="panel">
+    <h2>Tell us about your trip</h2>
+    <form id="bookingForm" novalidate>
+      <div class="form-grid">
+        <div class="form-group"><label for="fullName">Full name *</label><input id="fullName" name="fullName" autocomplete="name" required aria-describedby="fullNameError"><span class="error" id="fullNameError"></span></div>
+        <div class="form-group"><label for="email">Email address *</label><input id="email" name="email" type="email" autocomplete="email" required aria-describedby="emailError"><span class="error" id="emailError"></span></div>
+        <div class="form-group"><label for="phone">Phone number *</label><input id="phone" name="phone" type="tel" autocomplete="tel" required aria-describedby="phoneError"><span class="error" id="phoneError"></span></div>
+        <div class="form-group"><label for="destination">Destination *</label><select id="destination" name="destination" required aria-describedby="destinationError"><option value="">Choose one</option><option>Pokhara</option><option>Everest Region</option><option>Chitwan</option><option>Lumbini</option><option>Annapurna</option><option>Kathmandu Valley</option><option>Custom Trip</option></select><span class="error" id="destinationError"></span></div>
+        <div class="form-group"><label for="travelDate">Travel date *</label><input id="travelDate" name="travelDate" type="date" required aria-describedby="travelDateError"><span class="error" id="travelDateError"></span></div>
+        <div class="form-group"><label for="travellers">Number of travellers *</label><input id="travellers" name="travellers" type="number" min="1" max="20" value="1" required aria-describedby="travellersError"><span class="error" id="travellersError"></span></div>
+        <div class="form-group full"><label for="message">Trip preferences *</label><textarea id="message" name="message" rows="5" placeholder="Tell us about activities, accommodation or special requirements." required aria-describedby="messageError"></textarea><span class="error" id="messageError"></span></div>
+        <div class="form-group full"><label><input id="consent" type="checkbox"> I confirm that these details are correct. *</label><span class="error" id="consentError"></span></div>
+      </div>
+      <button class="btn btn-primary" type="submit">Save Booking Request</button>
+      <div class="notice" id="formNotice" role="status" tabindex="-1" aria-live="polite"></div>
+    </form>
+  </div>
+  <aside class="panel">
+    <h2>Saved requests</h2>
+    <p>This list demonstrates client-side storage using <code>localStorage</code>.</p>
+    <ol class="saved-list" id="savedBookings"></ol>
+    <button class="btn btn-outline" id="clearBookings" type="button">Clear Saved Requests</button>
+  </aside>
+</div></section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>Aims to Fulfill Your Dream</h3>
+        <p>Thoughtful journeys, local knowledge and friendly support for travellers discovering Nepal.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <p><a href="destinations.html">Destinations</a><br><a href="packages.html">Packages</a><br><a href="booking.html">Booking</a></p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>FY1 1LR, Blackpool North<br><a href="tel:07918877744">07918 877744</a><br><a href="contact.html">Facebook & Instagram</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span class="current-year"></span> Aims to Fulfill Your Dream. Coursework demonstration website.</div>
+  </div>
+</footer>
+</body>
+</html>
